@@ -13,7 +13,7 @@ function Header() {
         <Navbar.Brand href="#home">
           <img
             alt=""
-            src="/src/assets/react.svg"
+            src="/src/assets/pizza.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"
