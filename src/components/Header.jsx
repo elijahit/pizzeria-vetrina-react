@@ -25,19 +25,19 @@ function Header() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav id="navigation" className="ms-auto">
-            <Nav.Link>
-              <Link className="text-decoration-none text-white" to={"/"}>Home</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link className="text-decoration-none text-white" to={"/menu"}>Menù</Link>
-            </Nav.Link>
-            <NavDropdown title="Altro" id="basic-nav-dropdown" >
-              <NavDropdown.Item href="#action/3.1">Su di noi</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Dove ci troviamo
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav id="navigation-principal" className="ms-auto d-lg-flex align-items-lg-center gap-3 mt-3 mt-lg-0">
+            <Link className="link-navbar text-decoration-none text-white" to={"/"}>
+              Home
+            </Link>
+            <Link className="link-navbar text-decoration-none text-white" to={"/menu"}>
+              Menù
+            </Link>
+            <Link className="link-navbar text-decoration-none text-white" to={"/about"}>
+              Chi siamo
+            </Link>
+            <Link className="link-navbar text-decoration-none text-white" to={"/dove-siamo"}>
+              Dove siamo
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
