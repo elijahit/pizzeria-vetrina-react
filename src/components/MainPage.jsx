@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./MainPage.css";
 import HeroSection from "./HeroSection";
 import MainSection from "./MainSection";
 

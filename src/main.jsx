@@ -5,11 +5,13 @@ import App from './App.jsx'
 import './index.css'
 import About from './pages/About.jsx';
 import Menu from './pages/Menu.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
+    element: <App/>,
+    errorElement: <ErrorPage />
   },
   {
     path: "/about",
