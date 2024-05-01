@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-y: auto;
 }
 
 footer {
@@ -33,6 +34,30 @@ footer {
 
 .opacity-no {
   opacity: 0;
+}
+
+.opacity-no-left {
+  position: relative;
+  left: -200px;
+  opacity: 0;
+}
+
+.opacity-timing-left {
+  opacity: 100%;
+  left: 0;
+  transition: opacity 1s ease-in-out, left 0.7s ease-in-out;
+}
+
+.opacity-no-right {
+  position: relative;
+  right: -200px;
+  opacity: 0;
+}
+
+.opacity-timing-right {
+  opacity: 100%;
+  right: 0;
+  transition: opacity 1s ease-in-out, right 0.7s ease-in-out;
 }
 
 .opacity-timing {
