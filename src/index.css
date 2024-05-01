@@ -30,3 +30,16 @@
 footer {
   margin-top: auto;
 }
+
+.opacity-no {
+  opacity: 0;
+}
+
+.opacity-timing {
+  opacity: 100;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.bg-personality {
+  background-color: var(--colorPrincipal);
+}

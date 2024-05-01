@@ -1,12 +1,14 @@
 import "./MainPage.css";
 import HeroSection from "./HeroSection";
-import MainSection from "./MainSection";
+import HourSection from "./HourSection";
+import StaffSection from "./StaffSection";
 
 function Main() {
   return (
     <main>
       <HeroSection />
-      <MainSection />
+      <StaffSection />
+      <HourSection />
     </main>
   );
 }
