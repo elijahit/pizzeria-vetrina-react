@@ -52,7 +52,7 @@ function Footer() {
                     <li>
                       <p className="text-center text-lg-start">
                         Developed with 💛 by <br />
-                        <a className="text-decoration-none text-white-50" href="https://www.linkedin.com/in/gabriele-tosto/" target="_blank">Gabriele Mario Tosto</a> <br />
+                        <a className="text-decoration-none text-white-50 copyrigth-hover" href="https://www.linkedin.com/in/gabriele-tosto/" target="_blank">Gabriele Mario Tosto</a> <br />
                         &copy; 2024 - pizzeriatosto.it
                       </p>
                     </li>

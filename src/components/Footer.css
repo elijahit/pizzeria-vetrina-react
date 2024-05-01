@@ -3,6 +3,14 @@ footer {
   color: var(--whiteColor);
 }
 
+#navigation-secondary ul li a:hover {
+  color: var(--colorSecondary) !important;
+}
+
+.copyrigth-hover:hover {
+  color: var(--colorSecondary) !important;
+}
+
 @media screen and (min-width: 996px) {
   .social-navigation li a i:hover{
     color: darkslategray !important;

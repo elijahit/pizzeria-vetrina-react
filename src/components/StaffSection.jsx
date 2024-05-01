@@ -45,8 +45,8 @@ function StaffSection() {
             <div className="ms-auto col-12 d-flex flex-column flex-lg-row flex-wrap gap-5 justify-content-center align-items-center text-white">
               {StaffList.map((list) => {
                 return (
-                  <div className="staff-animation">
-                    <StaffCard staffName={list.name} staffPosition={list.position} staffExperience={list.experience} staffIMG={list.imgUrl} key={Math.random()} />
+                  <div className="staff-animation" key={Math.random()}>
+                    <StaffCard staffName={list.name} staffPosition={list.position} staffExperience={list.experience} staffIMG={list.imgUrl} />
                   </div>
                 );
               })}
