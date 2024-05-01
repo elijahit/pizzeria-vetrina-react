@@ -4,13 +4,21 @@ import "./HourSection.css";
 
 function HourSection() {
   const [divOpacity, setDivOpacity] = useState("container mb-5 opacity-no");
-  setTimeout(() => {
-    setDivOpacity("container mb-5 opacity-no opacity-timing");
-  }, 100);
+  // function test () {
+  //   setDivOpacity("container mb-5 opacity-no opacity-timing");
+  // }
 
+  const intersectionObserver = new IntersectionObserver((entries) => {
+    if (entries[0].intersectionRatio <= 0) return;
+    setDivOpacity("container mb-5 opacity-no opacity-timing");
+    intersectionObserver.unobserve(document.querySelector("#observer-hours"))
+  });
+  setTimeout(() => {
+    intersectionObserver.observe(document.querySelector("#observer-hours"));
+  }, 200);
   return (
     <>
-      <div className={divOpacity}>
+      <div id="observer-hours" className={divOpacity}>
         <div className="row">
           <div className="col-12">
             <div className="text-center fs-1 text-secondary"><i className="bi bi-clock-fill"></i></div>
@@ -35,5 +43,4 @@ function HourSection() {
     </>
   );
 }
-
 export default HourSection;

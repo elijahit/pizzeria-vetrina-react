@@ -32,13 +32,18 @@ function StaffSection() {
   ];
 
   const [divOpacity, setDivOpacity] = useState("opacity-no");
-  setTimeout(() => {
+  const intersectionObserver = new IntersectionObserver((entries) => {
+    if (entries[0].intersectionRatio <= 0) return;
     setDivOpacity("opacity-no opacity-timing");
-  }, 100);
+    intersectionObserver.unobserve(document.querySelector("#observer-staff"))
+  });
+  setTimeout(() => {
+    intersectionObserver.observe(document.querySelector("#observer-staff"));
+  }, 200);
 
   return (
     <>
-      <div className="bg-personality p-4">
+      <div id="observer-staff" className="bg-personality p-4">
         <div className={"container mb-5 " + divOpacity}>
           <h2 className="text-center mb-4 text-white">Il nostro staff</h2>
           <div className="row">
