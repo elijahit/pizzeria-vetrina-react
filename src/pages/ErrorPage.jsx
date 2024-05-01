@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import "./ErrorPage.css";
 
 function ErrorPage() {
+  document.title = "Pizzeria Tosto - Errore"
   return(
     <>
       <Header />

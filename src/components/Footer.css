@@ -1,4 +1,12 @@
-footer {
-  background-color: #802F24;
-  color: white;
+footer {  
+  background-color: var(--colorPrincipal);
+  color: var(--whiteColor);
+}
+
+@media screen and (min-width: 996px) {
+  .social-navigation li a i:hover{
+    color: darkslategray !important;
+    font-size: 40px !important;
+    transition: 0.2 ease-in-out;
+  }
 }

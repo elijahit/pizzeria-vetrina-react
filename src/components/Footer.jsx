@@ -7,10 +7,10 @@ function Footer() {
       <footer>
         <div className="container">
           {/* FOOTER PER DESKTOP */}
-          <div className="row d-none d-lg-flex mt-3">
-            <div className="col-6">
+          <div className="row mt-3">
+            <div className="col-12 col-lg-6">
               <div className="row">
-                <div className="col-6">
+                <div className="col-6 d-none d-lg-block">
                   <h6 className="text-white-50">Navigazione</h6>
                   <nav id="navigation-secondary">
                     <ul className="list-unstyled">
@@ -29,49 +29,50 @@ function Footer() {
                     </ul>
                   </nav>
                 </div>
-                <div className="col-6">
-                  <h6 className="text-white-50">Informazioni</h6>
+                <div className="col-12 col-lg-6">
+                  <h6 className="text-white-50 text-center text-lg-start">Informazioni</h6>
                   <ul className="list-unstyled">
                     <li>
-                      <p>
-                        Via Duca degli Abruzzi, 50 <br />
+                      <p className="text-center text-lg-start">
+                        <i className="bi bi-geo-alt-fill"></i> Via Duca degli Abruzzi, 50 <br />
                         95037 - San Giovanni la Punta (CT) <br />
-                        P.IVA: 06031440875
+                        P.IVA: 06031440875 <br />
+                        <i className="bi bi-telephone-fill"></i> <a className="text-decoration-none text-white" href="tel:0957179035">+39 095 717 9035</a>
                       </p>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-lg-6">
               <div className="row">
-                <div className="col-6">
-                  <h6 className="text-white-50">Site Copyright</h6>
+                <div className="col-12 col-lg-6">
+                  <h6 className="text-white-50 text-center text-lg-start">Site Copyright</h6>
                   <ul className="list-unstyled">
                     <li>
-                      <p>
+                      <p className="text-center text-lg-start">
                         Developed with 💛 by <br />
-                        <a className="text-decoration-none text-white-50" href="https://www.linkedin.com/in/gabriele-tosto/"  target="_blank">Gabriele Mario Tosto</a> <br />
+                        <a className="text-decoration-none text-white-50" href="https://www.linkedin.com/in/gabriele-tosto/" target="_blank">Gabriele Mario Tosto</a> <br />
                         &copy; 2024 - pizzeriatosto.it
                       </p>
                     </li>
                   </ul>
                 </div>
-                <div className="col-6 d-flex justify-content-center align-items-center">
-                  <ul className="list-unstyled d-flex gap-2 align-items-center">
+                <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                  <ul className="social-navigation list-unstyled d-flex gap-2 align-items-center">
                     <li>
                       <a href="https://m.facebook.com/people/Pizzeria-Tosto/61553390885333/" target="_blank">
-                        <img className="img-fluid" src="./src/assets/facebook.svg" alt="Facebook" width="48" />
+                        <i className="bi bi-facebook text-white fs-2"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://www.instagram.com/pizzeriatosto" target="_blank">
-                        <img className="img-fluid" src="./src/assets/instagram.svg" alt="Facebook" width="48" />
+                        <i className="bi bi-instagram text-white fs-2"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://www.tiktok.com/@pizzeriatosto" target="_blank">
-                        <img className="img-fluid rounded-4" src="./src/assets/tiktok.svg" alt="Facebook" width="40" />
+                        <i className="bi bi-tiktok text-white fs-2"></i>
                       </a>
                     </li>
                   </ul>
@@ -79,7 +80,6 @@ function Footer() {
               </div>
             </div>
           </div>
-          {/* FOOTER PER MOBILE */}
         </div>
       </footer>
     </>

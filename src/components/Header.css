@@ -1,5 +1,3 @@
-/* palette https://coolors.co/802f24-904a51-985868-9c5f73 */
-
 #navbar {
-  background-color: #802F24;
+  background-color: var(--colorPrincipal);
 }
