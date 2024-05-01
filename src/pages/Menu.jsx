@@ -6,7 +6,7 @@ function Menu() {
   document.title = "Pizzeria Tosto - Menù"
   return (
     <>
-      <Header />
+      <Header isPage="menu"/>
       <p>test menu</p>
       <Footer />
     </>

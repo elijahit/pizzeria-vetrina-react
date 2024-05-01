@@ -1,9 +1,15 @@
 import "./About.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function About() {
   document.title = "Pizzeria Tosto - Chi Siamo"
   return (
-    <p>test</p>
+    <>
+      <Header isPage="about"/>
+      <p>test menu</p>
+      <Footer />
+    </>
   );
 };
 

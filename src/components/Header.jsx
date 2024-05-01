@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
 
 
-function Header() {
+function Header({isPage}) {
 
   return (
     <Navbar id="navbar" expand="lg" data-bs-theme="dark">
@@ -26,16 +26,16 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav id="navigation-principal" className="ms-auto d-lg-flex align-items-lg-center gap-3 mt-3 mt-lg-0">
-            <Link className="link-navbar text-decoration-none text-white" to={"/"}>
+            <Link className={isPage == "home" ? "link-navbar text-decoration-none text-white" : "link-navbar text-decoration-none text-white-50"} to={"/"}>
               Home
             </Link>
-            <Link className="link-navbar text-decoration-none text-white" to={"/menu"}>
+            <Link className={isPage == "menu" ? "link-navbar text-decoration-none text-white" : "link-navbar text-decoration-none text-white-50"} to={"/menu"}>
               Menù
             </Link>
-            <Link className="link-navbar text-decoration-none text-white" to={"/about"}>
+            <Link className={isPage == "about" ? "link-navbar text-decoration-none text-white" : "link-navbar text-decoration-none text-white-50"} to={"/about"}>
               Chi siamo
             </Link>
-            <Link className="link-navbar text-decoration-none text-white" to={"/dove-siamo"}>
+            <Link className={isPage == "dove-siamo" ? "link-navbar text-decoration-none text-white" : "link-navbar text-decoration-none text-white-50"} to={"/dove-siamo"}>
               Dove siamo
             </Link>
           </Nav>
