@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom";
+import pizzaSvg from "/src/assets/pizza.svg";
 
 
 function Header({isPage}) {
@@ -15,7 +16,7 @@ function Header({isPage}) {
           <Link className="text-decoration-none text-white" to={"/"}>
             <img
               alt=""
-              src="/src/assets/pizza.svg"
+              src={pizzaSvg}
               width="30"
               height="30"
               className="d-inline-block align-top"

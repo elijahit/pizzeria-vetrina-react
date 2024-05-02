@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./StaffSection.css";
 import StaffCard from "./StaffCard";
+import defaultAvatarImg from "/src/assets/avatar.jpg";
 
 function StaffSection() {
 
@@ -9,41 +10,44 @@ function StaffSection() {
       name: "Nome Cognome",
       position: "Posizione",
       experience: "Esperienza",
-      imgUrl: "./src/assets/avatar.jpg",
+      imgUrl: defaultAvatarImg,
     },
     {
       name: "Nome Cognome",
       position: "Posizione",
       experience: "Esperienza",
-      imgUrl: "./src/assets/avatar.jpg",
+      imgUrl: defaultAvatarImg,
     },
     {
       name: "Nome Cognome",
       position: "Posizione",
       experience: "Esperienza",
-      imgUrl: "./src/assets/avatar.jpg",
+      imgUrl: defaultAvatarImg,
     },
     {
       name: "Nome Cognome",
       position: "Posizione",
       experience: "Esperienza",
-      imgUrl: "./src/assets/avatar.jpg",
+      imgUrl: defaultAvatarImg,
     }
   ];
 
   const [divOpacity, setDivOpacity] = useState("opacity-no");
-  const intersectionObserver = new IntersectionObserver((entries) => {
-    if (entries[0].intersectionRatio <= 0) return;
-    setDivOpacity("opacity-no opacity-timing");
-    intersectionObserver.unobserve(document.querySelector("#observer-staff"))
-  });
-  setTimeout(() => {
-    intersectionObserver.observe(document.querySelector("#observer-staff"));
-  }, 200);
+
+  function runObserver() {
+    const intersectionObserver = new IntersectionObserver((entries) => {
+      if (entries[0].intersectionRatio <= 0) return;
+      setDivOpacity("opacity-no opacity-timing");
+      intersectionObserver.unobserve(document.querySelector("#observer-staff"))
+    });
+    setTimeout(() => {
+      intersectionObserver.observe(document.querySelector("#observer-staff"));
+    }, 200);
+  }
 
   return (
     <>
-      <div id="observer-staff" className="bg-personality p-4">
+      <div onLoad={runObserver()} id="observer-staff" className="bg-personality p-4">
         <div className={"container mb-5 " + divOpacity}>
           <h2 className="text-center mb-4 text-white">Il nostro staff</h2>
           <div className="row">

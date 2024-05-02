@@ -7,7 +7,7 @@ function HourSection() {
   // function test () {
   //   setDivOpacity("container mb-5 opacity-no opacity-timing");
   // }
-
+function runObserver() {
   const intersectionObserver = new IntersectionObserver((entries) => {
     if (entries[0].intersectionRatio <= 0) return;
     setDivOpacity("container mb-5 opacity-no opacity-timing");
@@ -16,9 +16,10 @@ function HourSection() {
   setTimeout(() => {
     intersectionObserver.observe(document.querySelector("#observer-hours"));
   }, 200);
+}
   return (
     <>
-      <div id="observer-hours" className={divOpacity}>
+      <div onLoad={runObserver()} id="observer-hours" className={divOpacity}>
         <div className="row">
           <div className="col-12">
             <div className="text-center fs-1 text-secondary"><i className="bi bi-clock-fill"></i></div>

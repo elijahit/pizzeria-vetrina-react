@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "./ErrorPage.css";
+import error404Image from "/src/assets/404.svg"
 
 function ErrorPage() {
   document.title = "Pizzeria Tosto - Errore"
@@ -9,8 +10,8 @@ function ErrorPage() {
       <Header />
       <div className="container">
         <div className="row">
-          <div className="col-12 d-flex justify-content-center align-items-center flex-column position-absolute top-50 start-50 translate-middle">
-            <img src="./src/assets/404.svg" alt="Errore" class="img-fluid" width="100"/>
+          <div className="col-12 d-flex justify-content-center align-items-center flex-column mt-5">
+            <img src={error404Image} alt="Errore" class="img-fluid" width="100"/>
             <h1 className="text-center mt-5">Oops! Pagina non trovata</h1>
             <p className="text-center text-secondary">
               A quanto pare questa pagina non è stata trovata! <br />
