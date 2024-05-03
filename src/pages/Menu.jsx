@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Menu() {
-  document.title = "Pizzeria Tosto - Menù"
+  document.title = "Pizzeria - Menù"
   return (
     <>
       <Header isPage="menu"/>

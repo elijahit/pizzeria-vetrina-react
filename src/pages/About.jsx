@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function About() {
-  document.title = "Pizzeria Tosto - Chi Siamo"
+  document.title = "Pizzeria - Chi Siamo"
   return (
     <>
       <Header isPage="about"/>

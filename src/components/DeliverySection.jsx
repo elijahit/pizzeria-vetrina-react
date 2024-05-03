@@ -37,7 +37,7 @@ function DeliverySection() {
           </div>
           <div className={"col-12 col-lg-6 d-flex flex-column align-items-center " + divOpacityRight}>
             <img src={pizzaDeliveryImage} width="200" className="img-fluid" alt="" />
-            <p className="fw-bold fs-3"><i className="bi bi-telephone-fill"></i> 095 717 9035</p>
+            <p className="fw-bold fs-3"><i className="bi bi-telephone-fill"></i> 000 000 0000</p>
           </div>
         </div>
       </div>

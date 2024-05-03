@@ -34,10 +34,10 @@ function Footer() {
                   <ul className="list-unstyled">
                     <li>
                       <p className="text-center text-lg-start">
-                        <i className="bi bi-geo-alt-fill"></i> Via Duca degli Abruzzi, 50 <br />
+                        <i className="bi bi-geo-alt-fill"></i> Via di esempio, 46 <br />
                         95037 - San Giovanni la Punta (CT) <br />
-                        P.IVA: 06031440875 <br />
-                        <i className="bi bi-telephone-fill"></i> <a className="text-decoration-none text-white" href="tel:0957179035">+39 095 717 9035</a>
+                        P.IVA: 0000000000 <br />
+                        <i className="bi bi-telephone-fill"></i> <a className="text-decoration-none text-white" href="tel:0957179035">+39 000 000 0000</a>
                       </p>
                     </li>
                   </ul>
@@ -53,7 +53,7 @@ function Footer() {
                       <p className="text-center text-lg-start">
                         Developed with 💛 by <br />
                         <a className="text-decoration-none text-white-50 copyrigth-hover" href="https://www.linkedin.com/in/gabriele-tosto/" target="_blank">Gabriele Mario Tosto</a> <br />
-                        &copy; 2024 - pizzeriatosto.it
+                        &copy; 2024 - site.it
                       </p>
                     </li>
                   </ul>

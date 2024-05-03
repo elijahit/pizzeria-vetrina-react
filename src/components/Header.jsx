@@ -21,7 +21,7 @@ function Header({isPage}) {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            Pizzeria Tosto
+            Pizzeria Logo
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
